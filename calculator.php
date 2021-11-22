@@ -5,21 +5,15 @@
 <title>Answer</title>
 </head>
 <body>
-<p>The answer is: 
-<?php
-if($_POST['group1'] == add) {
-echo "$first + $second";
-}
-else if($_POST['group1'] == subtract) {
-echo "$first - $second";
-}
-else if($_POST['group1'] == times) {
-echo "$first * $second";
-}
-else($_POST['group1'] == divide) {
-echo "$first / $second";
-}
-?>
+
+1st Number:<input type="number" name="a" value=""><br>
+2nd Number:<input type="number" name="b" value=""><br>
+<input type="submit" name="submit" value="+" onclick="add()">
+<input type="submit" name="submit" value="-" onclick="sub()">
+<input type="submit" name="submit" value="*" onclick="mul()">
+<input type="submit" name="submit" value="/" onclick="div()"><br>
+The answer is: <h1 id="ans">...</h1><br>
 </p> 
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
